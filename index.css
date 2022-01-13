@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 35px 0 35px;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("images/bg-mobile.svg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+h2, p {
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  margin-bottom: 15px;
+  box-shadow: 0px 20px 20px -17px black;
+  cursor: pointer;
+}
+
+button:hover{
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+.mockup {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.logo {
+  width: 130px;
+  padding: 35px 0 50px 0;
+}
+
+.holder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+}
+
+.border{
+  margin: 15px 10px;
+  width:25px;
+  height: 25px;
+  padding: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  border-radius: 50%;
+}
+
+.icon{
+  width:25px;
+  height: 25px;
+  filter: invert();
+}
+
+.social div:hover{
+  cursor: pointer;
+  border-color:hsl(300, 69%, 71%);
+}
+
+.attribution a {
+  color: black;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (min-width:500px){
+  body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .img{
+    width: 50%;
+  }
+
+  .middle{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:1220px){
+  body{
+    background-image: url("images/bg-desktop.svg");
+    justify-content: space-between;
+  }
+
+  h2, p{
+    text-align: left;
+  }
+
+  h2{
+    margin-top: auto;
+    font-size: 2.5em;
+  }
+
+  p{
+    font-size: 18.5px;
+  }
+  .holder{
+    margin: auto;
+    flex-direction: row;
+  }
+
+  .logo{
+    width: 25%
+  }
+
+  .img{
+    width: 65%;
+    padding: 0;
+  }
+
+  .middle{
+    padding: 0 50px;
+    width: 35%;
+    height: 70vh;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .social{
+    align-self: flex-end;
+    margin-top: auto;
+  }
+}
